@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <title>
+        {% block title %}
+            
+        {% endblock title %}
+    </title>
+    <link rel="stylesheet" href="{% static 'student_info/css/style.css' %}">
+</head>
+<body>
+{% include 'includes/header.html'   %}
+
+{% block content %}
+    
+{% endblock content%}
+
+    
+
+   
+ {% include 'includes/footer.html'   %}  
+     
+</body>
+</html>
